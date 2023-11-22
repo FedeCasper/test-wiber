@@ -1,9 +1,10 @@
 def individual_serial(script) -> dict:
    return {
       "id": str(script["_id"]),
-      "name": script["name"],
-      "description": script["description"],
-      "complete": script["complete"]
+      "equipment": script["equipment"],
+      "version": script["version"],
+      "date": script["date"],
+      "body": script["body"]
    }
 
 def list_serial(scripts) -> list:
