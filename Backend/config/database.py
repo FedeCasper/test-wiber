@@ -1,8 +1,8 @@
 from pymongo import MongoClient
 from pymongo.mongo_client import MongoClient
-from decouple import config 
+from decouple import config
 
-client = MongoClient(config('MONGO_DB_URI'))
+client = MongoClient( config('MONGO_DB_URI') )
 db = client.scripts
 
 collection_name = db[config('MONGO_DB_NAME')]

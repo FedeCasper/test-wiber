@@ -13,6 +13,8 @@ ENV PYTHONDONTWRITEBYTECODE=1
 # Keeps Python from buffering stdout and stderr to avoid situations where
 # the application crashes without emitting any logs due to buffering.
 ENV PYTHONUNBUFFERED=1
+ENV MONGO_DB_URI="mongodb+srv://federicorouyere:mongo1234@prueba-cluster.cso4kl6.mongodb.net/"
+ENV MONGO_DB_NAME="scripts_collection"
 
 WORKDIR /app
 
@@ -28,6 +30,8 @@ RUN adduser \
     --uid "${UID}" \
     appuser
 
+RUN pip install python-decouple
+
 # Download dependencies as a separate step to take advantage of Docker's caching.
 # Leverage a cache mount to /root/.cache/pip to speed up subsequent builds.
 # Leverage a bind mount to requirements.txt to avoid having to copy them into
@@ -41,6 +45,9 @@ USER appuser
 
 # Copy the source code into the container.
 COPY . .
+
+# Instala las dependencias de Python
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose the port that the application listens on.
 EXPOSE 8000

@@ -1,7 +1,6 @@
 import './App.css'
 import { useState, useEffect } from 'react'
 import api from './api'
-import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
 function App() {

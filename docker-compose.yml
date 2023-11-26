@@ -1,13 +1,11 @@
 version: '3'
 services:
   frontend:
-    build:
-      context: ./Frontend
+    image: test-wiber-frontend
     ports:
       - "3000:3000"
   backend:
-    build:
-      context: ./Backend
+    image: test-wiber-backend
     ports:
       - "8000:8000"
     environment:
