@@ -32,6 +32,12 @@ RUN adduser \
 
 RUN pip install python-decouple
 
+# Instala curl / para hacer peticiones HTTP desde dentro del contenedor
+RUN apt-get update && apt-get install -y curl
+
+# Instala net-tools (netstat) / para revisar que puertos está escuchando
+RUN apt-get update && apt-get install -y lsof
+
 # Download dependencies as a separate step to take advantage of Docker's caching.
 # Leverage a cache mount to /root/.cache/pip to speed up subsequent builds.
 # Leverage a bind mount to requirements.txt to avoid having to copy them into
@@ -53,4 +59,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 8000
 
 # Run the application.
-CMD uvicorn main:app --reload
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+

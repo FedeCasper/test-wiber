@@ -24,7 +24,6 @@ function App() {
 
   const handleInputChange = (event) => {
     const value = event.target.value
-    console.log(value);
     setFormData({
       ...formData,
       [event.target.name]: value
@@ -32,17 +31,21 @@ function App() {
   };
 
   const handleSubmit = async (event) => {
-    event.preventDefault();
-    console.log("Dentro");
-    await api.post('/scripts/', formData)
-    fetchScripts()
+  event.preventDefault();
+  try {
+    console.log("Submitting form data:", formData);
+    await api.post('/scripts/', formData);
+    fetchScripts();
     setFormData({
       equipment: '',
       version: '',
       date: '',
       body: '',
-    })
+    });
+  } catch (error) {
+    console.error("Error submitting form:", error);
   }
+};
 
   return (
     <>

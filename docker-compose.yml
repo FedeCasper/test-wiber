@@ -1,12 +1,41 @@
 version: '3'
+
 services:
   frontend:
-    image: test-wiber-frontend
+    build:
+      context: ./frontend
+    #image: federico-rouyere/test-wiber-frontend
     ports:
       - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - test-wiber_my_network
+
   backend:
-    image: test-wiber-backend
+    build:
+      context: ./backend
+    #image: federico-rouyere/test-wiber-backend
     ports:
       - "8000:8000"
     environment:
       - DATABASE_URL=mongodb+srv://federicorouyere:mongo1234@prueba-cluster.cso4kl6.mongodb.net/
+    depends_on:
+      - mongo
+    networks:
+      - test-wiber_my_network
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: federicorouyere
+      MONGO_INITDB_ROOT_PASSWORD: mongo1234
+      MONGO_INITDB_DATABASE: prueba-cluster
+    networks:
+      - test-wiber_my_network
+
+networks:
+  test-wiber_my_network:
+    driver: bridge
