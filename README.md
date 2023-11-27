@@ -62,9 +62,9 @@ This project uses MongoDB Atlas as its database. Ensure you have an account on [
 
 Remember to update the connection details in both the backend configuration and the Docker Compose file to link it with your desired database.
 
-## Contribución
+## Contribution
 
-¡Contribuciones son bienvenidas! Por favor, sigue el flujo de trabajo de contribución estándar.
+Contributions are welcome! Please follow the standard contribution workflow.
 
 ## Known Issues
 
@@ -73,7 +73,7 @@ Remember to update the connection details in both the backend configuration and 
  - Additionally, ensure that Vite is included among the development dependencies.
  - Dockerfiles include tools for making requests between containers and verifying their connection.
 
-## Contact
+## `Contact`
 
 For any questions or issues, feel free to reach out at [federicorouyere@gmail.com].
 
