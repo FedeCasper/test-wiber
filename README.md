@@ -73,7 +73,7 @@ Contributions are welcome! Please follow the standard contribution workflow.
  - Additionally, ensure that Vite is included among the development dependencies.
  - Dockerfiles include tools for making requests between containers and verifying their connection.
 
-## `Contact`
+### `Contact`
 
 For any questions or issues, feel free to reach out at [federicorouyere@gmail.com].
 
