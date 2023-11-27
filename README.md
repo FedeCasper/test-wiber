@@ -42,7 +42,7 @@ This project is a straightforward CRUD application built on the FARM stack (Fast
 
 ## Usage
 
-- The application features a welcoming section and a dashboard section where you can perform Create, Read, Update, and Delete operations on scripts.
+The application features a welcoming section and a dashboard section where you can perform Create, Read, Update, and Delete operations on scripts.
 
 ## Docker
 
@@ -62,10 +62,6 @@ This project uses MongoDB Atlas as its database. Ensure you have an account on [
 
 Remember to update the connection details in both the backend configuration and the Docker Compose file to link it with your desired database.
 
-## Contribution
-
-Contributions are welcome! Please follow the standard contribution workflow.
-
 ## Known Issues
 
  - This project structure may not work with Node.js versions below 14. 
@@ -73,8 +69,12 @@ Contributions are welcome! Please follow the standard contribution workflow.
  - Additionally, ensure that Vite is included among the development dependencies.
  - Dockerfiles include tools for making requests between containers and verifying their connection.
 
-### `Contact`
+## Contact
 
-For any questions or issues, feel free to reach out at [federicorouyere@gmail.com].
+For any questions or issues, feel free to reach out at federicorouyere@gmail.com .
+
+## Contribution
+
+Contributions are welcome! Please follow the standard contribution workflow.
 
 
