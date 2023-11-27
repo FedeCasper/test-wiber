@@ -13,6 +13,7 @@ ENV PYTHONDONTWRITEBYTECODE=1
 # Keeps Python from buffering stdout and stderr to avoid situations where
 # the application crashes without emitting any logs due to buffering.
 ENV PYTHONUNBUFFERED=1
+
 ENV MONGO_DB_URI="mongodb+srv://federicorouyere:mongo1234@prueba-cluster.cso4kl6.mongodb.net/"
 ENV MONGO_DB_NAME="scripts_collection"
 
