@@ -7,6 +7,8 @@ db = client.scripts
 
 collection_name = db[config('MONGO_DB_NAME')]
 
+collection_version_history = db["version_history"]
+
 try:
    client.admin.command('ping')
    print(" *** Pinged your deployment. You successfully connected to MongoDB! *** ")
