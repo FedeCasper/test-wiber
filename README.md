@@ -2,7 +2,16 @@
 
 ## Description
 
-This project is a straightforward CRUD application built on the FARM stack (FastAPI, React, MongoDB).
+This project is a simple CRUD (Create, Read, Update, Delete) application developed using the FARM stack (FastAPI, React, MongoDB). It facilitates the creation and versioning of scripts, storing them in a comprehensive change history. Additionally, the application allows for efficient script filtering directly from the database.
+
+## Usage Options
+
+### `Option 1: Docker`
+
+The application is dockerized for easy deployment in a multi-container setup. Follow these steps:
+
+1. Navigate to the root of the project.
+2. Run the containers: `docker-compose up -d`
 
 ## Prerequisites
 
@@ -43,13 +52,6 @@ This project is a straightforward CRUD application built on the FARM stack (Fast
 ## Usage
 
 The application features a welcoming section and a dashboard section where you can perform Create, Read, Update, and Delete operations on scripts.
-
-## Docker
-
-The application is dockerized for easy deployment in a multi-container setup. Follow these steps:
-
-1. Navigate to the root of the project.
-2. Run the containers: `docker-compose up -d`
 
 ## Database
 
