@@ -16,20 +16,16 @@ This project is a simple CRUD (Create, Read, Update, Delete) application develop
 
 The application is dockerized for easy deployment in a multi-container setup. Follow these steps:
 
+### Steps
+
 1. Navigate to the root of the project.
 2. Run the containers:
-```Bash
+   ```bash
    docker-compose up -d
-```
+
 3. Open your web browser and go to `http://localhost:3000` to interact with the application.
 
 ## `Option 2: Usage Without Docker`
-
-### Steps
-
-1. Clone the Repository:
-   ```bash
-   git clone https://github.com/your/repository.git
 
 ### Prerequisites
 
@@ -39,6 +35,18 @@ The application is dockerized for easy deployment in a multi-container setup. Fo
 - Python (v3.12.0)
 - Fastapi (v0.104.1)
 - Uvicorn (v0.24.0.post1)
+
+### Steps
+
+1. Clone the Repository:
+   ```bash
+   git clone https://github.com/your/repository.git
+2. Navigate to the project directory: 
+   ```bash
+   cd test-wiber
+2. Navigate to the backend directory: 
+   ```bash
+   cd Backend 
 
 ### Configuration
 
