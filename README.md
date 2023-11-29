@@ -83,7 +83,7 @@ The application is dockerized for easy deployment in a multi-container setup. Fo
 
 ### Usage
 
-The application features a welcoming section and a dashboard section where you can perform Create, Read, Update, and Delete operations on scripts.
+The application comprises two primary sections. The first is the Welcome Section, serving as a static example page to provide a brief introduction. The second is the Dashboard Section, where users can seamlessly perform script management tasks. This includes creating, modifying, and deleting scripts using CRUD operations. Additionally, users can track script versions, gaining insights into changes over time. The Dashboard further offers a text-based search filter for efficient script retrieval based on content. 
 
 ### Database
 
@@ -107,8 +107,9 @@ Remember to update the connection details in both the backend configuration and 
 
 For any questions or issues, feel free to reach out at 
 ```bash
-federicorouyere@gmail.com
+   federicorouyere@gmail.com
 ```
+
 
 ### Contribution
 
