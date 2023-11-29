@@ -10,6 +10,7 @@ This project is a simple CRUD (Create, Read, Update, Delete) application develop
 
 The application is dockerized for easy deployment in a multi-container setup. Follow these steps:
 
+```Bash
 1. Navigate to the root of the project.
 2. Run the containers: `docker-compose up -d`
 
