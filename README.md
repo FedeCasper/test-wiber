@@ -44,30 +44,36 @@ The application is dockerized for easy deployment in a multi-container setup. Fo
 2. Navigate to the project directory: 
    ```bash
    cd test-wiber
-2. Navigate to the backend directory: 
+3. Navigate to the backend directory: 
    ```bash
-   cd Backend 
-
-### Configuration
-
-1. Clone the repository: `git clone https://github.com/FedeCasper/test-wiber.git`
-2. Navigate to the project directory: `cd test-wiber`
-3. Install backend dependencies:
-   cd Backend 
-   python -m venv venv ( Creates virtual enviroment )
-   source venv\Scripts\activate ( Activate the vitual enviroment for Windows )
-   pip install -r requirements.txt.
-4. Return to the main directory: `cd ..`
-5. Install frontend dependencies:
+   cd Backend
+4. Creates virtual enviroment: 
+   ```bash
+   python -m venv venv
+5. Activate the vitual enviroment for **Windows**: 
+   ```bash
+   source venv\Scripts\activate
+6. Install dependencies: 
+   ```bash
+   pip install -r requirements.txt. 
+7. Navigate to the frontend directory: 
+   ```bash
+   cd ..
    cd Frontend
+8. Install dependencies: 
+   ```bash
    npm install
 
-### Instalación
+### Installation
 
-1. Open a new terminal (CMD) and navigate to the backend directory
-2. Start the backend service: `uvicorn main:app --reload`
-3. Open a new terminal (Bash) and navigate to the frontend directory
-4. Start the frontend: `npm run dev`
+1. Open a new terminal **( CMD )** and navigate to the backend directory
+2. Start the backend service: 
+   ```bash
+   uvicorn main:app --reload
+3. Open a new terminal **( Bash )** and navigate to the frontend directory
+4. Start the frontend: 
+   ```bash
+   npm run dev
 5. Open your browser and visit `http://localhost:3000`
 
 ### Project Structure
@@ -99,7 +105,10 @@ Remember to update the connection details in both the backend configuration and 
 
 ### Contact
 
-For any questions or issues, feel free to reach out at federicorouyere@gmail.com .
+For any questions or issues, feel free to reach out at 
+```bash
+federicorouyere@gmail.com
+
 
 ### Contribution
 
