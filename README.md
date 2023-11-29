@@ -8,11 +8,28 @@ This project is a simple CRUD (Create, Read, Update, Delete) application develop
 
 ### `Option 1: Docker`
 
+### Prerequisites
+
+- [Docker Desktop](https://www.docker.com/products/docker-desktop) installed on your machine.
+
+## Deployment Using Docker
+
 The application is dockerized for easy deployment in a multi-container setup. Follow these steps:
 
-```Bash
 1. Navigate to the root of the project.
-2. Run the containers: `docker-compose up -d`
+2. Run the containers: 
+```Bash
+docker-compose up -d
+```
+3. Open your web browser and go to `http://localhost:3000` to interact with the application.
+
+### `Option 2: Usage Without Docker`
+
+### Steps
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your/repository.git
 
 ## Prerequisites
 
