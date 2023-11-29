@@ -12,12 +12,12 @@ This project is a simple CRUD (Create, Read, Update, Delete) application develop
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop) installed on your machine.
 
-## Deployment Using Docker
+### Deployment Using Docker
 
 The application is dockerized for easy deployment in a multi-container setup. Follow these steps:
 
 1. Navigate to the root of the project.
-2. Run the containers: 
+2. **Run the containers:** 
 ```Bash
 docker-compose up -d
 ```
@@ -31,7 +31,7 @@ docker-compose up -d
    ```bash
    git clone https://github.com/your/repository.git
 
-## Prerequisites
+### Prerequisites
 
 - Node.js (v20.10.0)
 - Vite.js (v5.0.2)
@@ -40,7 +40,7 @@ docker-compose up -d
 - Fastapi (v0.104.1)
 - Uvicorn (v0.24.0.post1)
 
-## Configuration
+### Configuration
 
 1. Clone the repository: `git clone https://github.com/FedeCasper/test-wiber.git`
 2. Navigate to the project directory: `cd test-wiber`
@@ -54,7 +54,7 @@ docker-compose up -d
    cd Frontend
    npm install
 
-## Instalación
+### Instalación
 
 1. Open a new terminal (CMD) and navigate to the backend directory
 2. Start the backend service: `uvicorn main:app --reload`
@@ -62,16 +62,16 @@ docker-compose up -d
 4. Start the frontend: `npm run dev`
 5. Open your browser and visit `http://localhost:3000`
 
-## Project Structure
+### Project Structure
 
 - `/backend`: Backend source code
 - `/frontend`: Frontend source code
 
-## Usage
+### Usage
 
 The application features a welcoming section and a dashboard section where you can perform Create, Read, Update, and Delete operations on scripts.
 
-## Database
+### Database
 
 This project uses MongoDB Atlas as its database. Ensure you have an account on [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) and follow these steps:
 
@@ -82,18 +82,18 @@ This project uses MongoDB Atlas as its database. Ensure you have an account on [
 
 Remember to update the connection details in both the backend configuration and the Docker Compose file to link it with your desired database.
 
-## Known Issues
+### Known Issues
 
  - This project structure may not work with Node.js versions below 14. 
  - Please be aware that the setup of the virtual environment may vary based on the operating system. 
  - Additionally, ensure that Vite is included among the development dependencies.
  - Dockerfiles include tools for making requests between containers and verifying their connection.
 
-## Contact
+### Contact
 
 For any questions or issues, feel free to reach out at federicorouyere@gmail.com .
 
-## Contribution
+### Contribution
 
 Contributions are welcome! Please follow the standard contribution workflow.
 
