@@ -108,7 +108,7 @@ Remember to update the connection details in both the backend configuration and 
 For any questions or issues, feel free to reach out at 
 ```bash
 federicorouyere@gmail.com
-
+```
 
 ### Contribution
 
